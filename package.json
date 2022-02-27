@@ -1,0 +1,27 @@
+{
+  "name": "form-page",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
+  },
+  "dependencies": {
+    "@splidejs/vue-splide": "^0.5.18",
+    "bootstrap": "^5.1.3",
+    "bootstrap-vue": "^2.21.2",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1",
+    "vue": "^3.2.31",
+    "vue-carousel": "^0.18.0",
+    "vue-glide-js": "^1.3.14",
+    "vue-slick": "^1.1.16",
+    "vuelidate": "^0.7.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.2",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.6.0",
+    "vite": "^2.8.4"
+  }
+}
