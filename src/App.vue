@@ -11,7 +11,10 @@
         />
       </div>
       <div class="formContent">
-        <Form />
+        <Form 
+          thanksTextMain="Obrigado!" 
+          thanksSubTextMain="Em breve estaremos entrando em contato :)"
+        />
       </div>
     </section>
   </main>

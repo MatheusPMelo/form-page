@@ -2,7 +2,7 @@
     <div class="container mt-5">
         <div class="col-md-12 d-flex justify-content-center">
             <div class="contentForm  p-2 col-md-6">
-                <form @submit.prevent="checkForm" action="#" method="get">
+                <form @submit.prevent="redirect" action="#" method="get">
                     <div class="d-flex justify-content-center">
                         <div class="col-md-4 m-2">
                             <input class="p-3" v-model="nome" type="text" name="" id="nome" placeholder="Nome*" required>
@@ -32,6 +32,15 @@
                         </div>
                     </div>
                 </form>
+
+                <div class="thanks hide">
+                    <h2>
+                        {{thanksTextMain}}
+                    </h2>
+                    <p>
+                        {{thanksSubTextMain}}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -40,14 +49,12 @@
 <script>
 export default {
     name: 'Form',
+    props: {
+        'thanksTextMain': String,
+        'thanksSubTextMain': String
+    },
     data: () => {
         return {
-            error: [],
-            nome: null,
-            sobrenome: null,
-            email: null,
-            senha: null,
-
             opts: [
                 {names: "Selecione seu sexo"},
                 {names: "Feminino"},
@@ -55,15 +62,48 @@ export default {
                 {names: "Não binário"},
             ]
         }
-    }    
+    },
+    methods: {
+        redirect(){
+
+            const form = document.querySelector('form')
+            const show = document.querySelector('.hide')
+
+            form.addEventListener('click', () => {
+                form.classList.add('hide')
+                show.classList.remove('hide')
+                show.classList.add('show')
+            })
+
+        }
+    } 
 }
 </script>
 
 <style scoped>
+.thanks h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 40pt;
+    text-transform: uppercase;
+}
+.thanks p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: -12px;
+    font-size: 19pt;
+}
+.show{
+    display: block !important;
+}
+.hide{
+    display: none !important;
+}
 input{
     border-radius: .5rem;
-    border:none;
-    outline: none;
     border: solid 2px #ffffff00;
 }
 input[type=submit]{
@@ -72,7 +112,7 @@ input[type=submit]{
     font-weight: 600;
     color: #fff;
     font-size: 18pt;
-    border: solid 3px #2f94ca;
+    border: solid 2px #2f94ca;
     transition: .5s;
     outline: none;
     border: solid 2px #ffffff00;
@@ -83,7 +123,7 @@ input:focus, input[type=submit]:focus{
 }
 input[type=submit]:hover{
     background-color: #ffffff10;
-    border: solid 3px #fff;
+    border: solid 2px #fff;
     backdrop-filter: blur(2px);
 }
 select{
