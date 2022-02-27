@@ -34,8 +34,8 @@ export default {
         return{
             options:{
                 rewind: true,
-                width: 650,
-                height: 200,
+                width: 400,
+                height: 300,
                 padding: '4rem',
                 gap: '5rem'
             },

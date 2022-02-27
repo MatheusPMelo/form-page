@@ -1,15 +1,16 @@
 <template>
     <div class="mainTopPage container">
         <div class="row pt-3">
-            <div class="logo col-md-6">
+            <div class="logo col-md-6 col-6">
                 <a href="">
                     <img 
                     src="./../assets/logo.png"
-                    alt="" 
+                    alt=""
+                    class="img-fluid"
                     >
                 </a>
             </div>
-            <div class="col-md-6 d-flex justify-content-end align-items-center">
+            <div class="col-md-6 col-6 d-flex justify-content-end align-items-center">
                 <button class="btn">{{btn}}</button>
             </div>
         </div>

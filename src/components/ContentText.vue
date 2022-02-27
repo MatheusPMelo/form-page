@@ -1,8 +1,8 @@
 <template>
     <div class="container pt-5 pb-5">
         <div class="row">
-            <div class="col-md-6">
-                <div v-for="textItem in textItems" :key="textItem.id" class="text1 pt-3">
+            <div class="col-md-6 col-12">
+                <div v-for="textItem in textItems" :key="textItem.id" class="text1 pt-3 col-12">
                     <h4>
                         {{textItem.titleText}}
                     </h4>

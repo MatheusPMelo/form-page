@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <div class="title col-md-12 d-flex justify-content-center">
-            <h1>{{mainTitle}}</h1>
+        <div class="title col-md-12 col-12 d-flex justify-content-center">
+            <h1 class="text-center pt-3">{{mainTitle}}</h1>
         </div>
-        <div class="subTitle col-md-12 d-flex justify-content-center">
-            <h3>{{subTitle}}</h3>
+        <div class="subTitle col-md-12 col-12 d-flex justify-content-center">
+            <h3 class="text-center pt-3">{{subTitle}}</h3>
         </div>
     </div>
 </template>
@@ -13,12 +13,14 @@
 *{
     color:white
 }
+
 h3{
     font-weight: 100;
     opacity: .5;
     position: relative;
     display: flex;
     justify-content: center;
+    
 }
 h3::before{
     content: "";
@@ -28,7 +30,7 @@ h3::before{
     background-color: white;
     border-radius: 1rem;
     display: flex;
-    top: 50px;
+    top: 170%;
     box-shadow: 0 0 5px #fff;
 }
 </style>
