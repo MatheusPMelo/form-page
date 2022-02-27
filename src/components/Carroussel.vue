@@ -6,7 +6,7 @@
                 </h1>
             </div>
         <div class="container col-md-12 d-flex justify-content-center pt-5 pb-3">
-            <Splide class="" :options="options">
+            <Splide :options="options">
                 <SplideSlide class="sliderContent" v-for="carrousselItem in carrousselItems" :key="carrousselItem.id" >
                     <h2 class="d-flex justify-content-center titleCarroussel pb-3">
                         {{carrousselItem.title}}
@@ -39,7 +39,7 @@ export default {
                 padding: '4rem',
                 gap: '5rem'
             },
-            titleSection: 'Carrossel',
+            titleSection: 'Lorem',
             carrousselItems: [
                 {title: 'Lorem Ipsum', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis tortor at nisi cursus, ut egestas leo vestibulum. Nullam et ante et sapien semper varius.'},
                 {title: 'Lorem Ipsum', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis tortor at nisi cursus, ut egestas leo vestibulum. Nullam et ante et sapien semper varius.'},

@@ -23,6 +23,11 @@
         <Carroussel />
       </div>
     </section>
+    <footer>
+      <div class="contentFooter">
+        <Footer />
+      </div>
+    </footer>
 </template>
 
 <script>
@@ -31,6 +36,7 @@ import Title from './components/Title.vue'
 import Form from './components/Form.vue'
 import ContentText from './components/ContentText.vue'
 import Carroussel from './components/Carroussel.vue'
+import Footer from './components/Footer.vue'
 
 
 export default {
@@ -40,7 +46,8 @@ export default {
     Title,
     Form,
     ContentText,
-    Carroussel
+    Carroussel,
+    Footer
   }
 }
 </script>

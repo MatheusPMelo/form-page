@@ -23,7 +23,7 @@ h3{
 h3::before{
     content: "";
     position: absolute;
-    width: 60vh;
+    width: 30vh;
     height: 2px;
     background-color: white;
     border-radius: 1rem;
