@@ -5,7 +5,7 @@
                     {{titleSection}}
                 </h1>
             </div>
-        <div class="container col-md-12 d-flex justify-content-center pt-5 pb-3">
+        <div class="container col-12 col-md-12 d-flex justify-content-center pt-5 pb-3">
             <Splide :options="options">
                 <SplideSlide class="sliderContent" v-for="carrousselItem in carrousselItems" :key="carrousselItem.id" >
                     <h2 class="d-flex justify-content-center titleCarroussel pb-3">

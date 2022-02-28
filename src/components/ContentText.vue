@@ -1,22 +1,22 @@
 <template>
     <div class="container pt-5 pb-5">
-        <div class="row">
-            <div class="col-md-6 col-12">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 col-8">
                 <div v-for="textItem in textItems" :key="textItem.id" class="text1 pt-3 col-12">
-                    <h4>
+                    <h4 class="text-center">
                         {{textItem.titleText}}
                     </h4>
-                    <p class="text-justify">
+                    <p class="text-center">
                         {{textItem.text}}
                     </p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-8">
                 <div v-for="textItem in textItems" :key="textItem.id" class="text1 pt-3">
-                    <h4>
+                    <h4 class="text-center">
                         {{textItem.titleText}}
                     </h4>
-                    <p class="text-justify">
+                    <p class="text-center">
                         {{textItem.text}}
                     </p>
                 </div>
