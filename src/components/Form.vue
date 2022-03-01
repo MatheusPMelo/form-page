@@ -5,7 +5,15 @@
                 <form @submit.prevent="redirect" action="#" method="get">
                     <div class="collunm d-flex justify-content-center">
                         <div class="col-md-5 col-5 p-1">
-                            <input class="col-md-12 p-3" v-model="nome" type="text" name="" id="nome" placeholder="Nome*" required>
+                            <input 
+                                class="col-md-12 p-3"
+                                v-model="nome"
+                                type="text"
+                                name=""
+                                id="nome"
+                                placeholder="Nome*"
+                                required
+                            >
                         </div>
                         <div class="col-md-5 col-4 p-1 ">
                             <input class="col-md-12 p-3" v-model="sobrenome" type="text" name="" id="sobrenome" placeholder="Sobrenome*" required>
